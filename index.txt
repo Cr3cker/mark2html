@@ -1,4 +1,4 @@
 # hello
-I really **like** using Markdown.
+I really **like bold** using Markdown.
 ## i am so good
 ###### hey hey andrew

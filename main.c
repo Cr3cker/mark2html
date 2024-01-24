@@ -28,9 +28,14 @@ void create_end_skeleton(FILE *output) {
     fprintf(output, "</html>\n");
 }
 
-int main() {
-    FILE* file = fopen("index.txt", "r");
-    FILE* output = fopen("index.html", "w");
+int main(int argc, char *argv[]) {
+    FILE* file;
+    FILE* output;
+
+    if (argc == 3) {
+        file = fopen(argv[1], "r");
+        output = fopen(argv[2], "w");
+    }
 
     if (file == NULL || output == NULL) {
         exit(1);
